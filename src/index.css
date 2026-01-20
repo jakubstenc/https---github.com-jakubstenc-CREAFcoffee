@@ -4,8 +4,9 @@
   --color-coffee-light: #a1887f;
   --color-paper: #fdfbf7;
   --color-text: #2c2c2c;
-  --font-family-base: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --font-family-header: 'Courier New', Courier, monospace; /* Typewriter style */
+  --font-family-base: 'Courier New', Courier, monospace;
+  --font-family-header: 'Courier New', Courier, monospace;
+  /* Typewriter style */
 }
 
 body {
@@ -18,8 +19,8 @@ body {
   position: relative;
   overflow-x: hidden;
   /* Paper texture effect */
-  background-image: linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
@@ -57,13 +58,16 @@ body::after {
 }
 
 #root {
-  max-width: 600px; /* Mobile focused */
+  max-width: 600px;
+  /* Mobile focused */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-family-header);
   color: var(--color-coffee-dark);
 }
@@ -74,7 +78,8 @@ button {
   border: none;
   padding: 0.8em 1.2em;
   font-size: 1.1em;
-  border-radius: 8px; /* Slightly rounded, organic feel */
+  border-radius: 8px;
+  /* Slightly rounded, organic feel */
   cursor: pointer;
   transition: transform 0.1s, background-color 0.2s;
   font-family: var(--font-family-header);
@@ -116,5 +121,5 @@ input:focus {
   border-radius: 12px;
   border: 1px solid rgba(62, 39, 35, 0.1);
   margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
